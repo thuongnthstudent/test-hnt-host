@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNT Bookshop</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!--icon website-->
+    <link rel="shortcut icon" href="image/logo_shortcut.jpg">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+</head>
+<body>
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <div class="header-1">
+
+            <a href="homepage.html" class="logo"> <img src="Image/logo.png" alt="logo"> </a>
+
+            <div class="wrapper">
+                <div class="search-input">
+                    <a href="" target="_blank" hidden></a>
+                    <input type="search" placeholder="Tìm kiếm sản phẩm...">
+                    <div class="autocom-box">
+                        <!-- here list are inserted from javascript -->
+                    </div>
+                    <div class="icon"><a href="shop.html"><i class="fas fa-search"></i></a></div>
+
+                </div>
+            </div>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a id="cart-btn" href="shoppingcart.html" class="fas fa-shopping-cart"></a>
+                <a id="login-btn" href="login.html" class="fas fa-user"></a>
+            </div>
+
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <ul id="menu">
+                    <li id="item"><a id="menu_lv1" href="homepage.html">Trang chủ</a></li>
+                    <li id="item">
+                        <a id="menu_lv1" href="shop.html">Sản phẩm</a>
+                        <ul class="subnav">
+                            <li><a href="shop_kynang.html">Kỹ năng sống</a></li>
+                            <li><a href="shop_vanhoc.html">Văn học</a></li>
+                            <li><a href="shop_kinhte.html">Kinh tế</a></li>
+                            <li><a href="shop_xahoi.html">Xã hội</a></li>
+                            <li><a href="shop_khoahoc.html">Khoa học</a></li>
+                        </ul>
+                    </li>
+                    <li id="item"><a id="menu_lv1" href="about.html">Giới thiệu</a></li>
+                    <li id="item"><a id="menu_lv1" href="blog.html">Blog</a></li>
+                    <li id="item"><a id="menu_lv1" href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+    <!--<div class="loader-container">
+        <img src="image/loader-img.gif" alt="">
+    </div>-->
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        function addShoppingCart() {
+            alert("Sản phẩm đã được thêm vào Giỏ hàng");
+        }
+        function registerEmail() {
+            alert("Cảm ơn bạn đã đăng ký!")
+        }
+    </script>
+    <!-- custom js file link  -->
+    <script src="js/scriptHP.js"></script>
+    <script src="js/suggestions.js"></script>
+    <script src="js/homepageScript.js"></script>
+
+
+</body>
+</html>

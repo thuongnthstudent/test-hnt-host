@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CATEGORY>
+  <sinhvien>
+    <mssv>K194111626 - K19411C</mssv>
+    <hoten>Huỳnh Ngô Bích Tâm</hoten>
+    <role>Nhóm trưởng</role>
+    <ngaySinh>03/11/2001</ngaySinh>
+    <hinh>/image/BichTam.jpg</hinh>
+    <mota>Học hành như cá kho tiêu, học nhiều thì giỏi, code nhiều thì khôn</mota>
+  </sinhvien>
+  <sinhvien>
+    <mssv>K194111607 - K19411C</mssv>
+    <hoten>Đặng Tiến Hưng</hoten>
+    <role>Thành viên</role>
+    <ngaySinh>07/10/2001</ngaySinh>
+    <hinh>/image/TienHung.jpg</hinh>
+    <mota>Thanh xuân như một tách trà, vậy mà code web hoài không ra</mota>
+  </sinhvien>
+  <sinhvien>
+    <mssv>K194111614 - K19411C</mssv>
+    <hoten>Lê Nguyên Nga</hoten>
+    <role>Thành viên</role>
+    <ngaySinh>24/07/2001</ngaySinh>
+    <hinh>/image/NgaLe.jpg</hinh>
+    <mota>Nhất dáng, nhì da, thứ ba được 10 điểm web</mota>
+  </sinhvien>
+  <sinhvien>
+    <mssv>K194111633 - K19411C</mssv>
+    <hoten>Nguyễn Thị Hoài Thương</hoten>
+    <role>Thành viên</role>
+    <ngaySinh>28/06/2001</ngaySinh>
+    <hinh>/image/HoaiThuong.jpg</hinh>
+    <mota>Nước trong thì không có cá, code nhiều quá có được 10đ hong ta</mota>
+  </sinhvien>
+  <sinhvien>
+    <mssv>K194111636 - K19411C</mssv>
+    <hoten>Trần Quốc Trưởng</hoten>
+    <role>Thành viên</role>
+    <ngaySinh>27/1/2001</ngaySinh>
+    <hinh>/image/truong.jpg</hinh>
+    <mota>Học code không khó, khó ở chỗ không biết bug chỗ nào</mota>
+  </sinhvien>
+ 
+</CATEGORY>
+

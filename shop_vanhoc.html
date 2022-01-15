@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Văn học</title>
+    <link rel="icon" type="image/x-icon" href="image/Logo_vertical.png" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <div class="header-1">
+
+            <a href="homepage.html" class="logo"> <img src="Image/logo.png" alt="logo"> </a>
+
+            <div class="wrapper">
+                <div class="search-input">
+                    <a href="" target="_blank" hidden></a>
+                    <input type="search" placeholder="Tìm kiếm sản phẩm...">
+                    <div class="autocom-box">
+                        <!-- here list are inserted from javascript -->
+                    </div>
+                    <div class="icon"><a href="shop.html"><i class="fas fa-search"></i></a></div>
+
+                </div>
+            </div>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a id="cart-btn" class="fas fa-shopping-cart" href="shoppingcart.html"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <ul id="menu">
+                    <li id="item"><a id="menu_lv1" href="homepage.html">Trang chủ</a></li>
+                    <li id="item">
+                        <a id="menu_lv1" href="shop.html">Sản phẩm</a>
+                        <ul class="subnav">
+                            <li><a href="shop_kynang.html">Kỹ năng sống</a></li>
+                            <li><a href="shop_vanhoc.html">Văn học</a></li>
+                            <li><a href="shop_kinhte.html">Kinh tế</a></li>
+                            <li><a href="shop_xahoi.html">Xã hội</a></li>
+                            <li><a href="shop_khoahoc.html">Khoa học</a></li>
+                        </ul>
+                    </li>
+                    <li id="item"><a id="menu_lv1" href="about.html">Giới thiệu</a></li>
+                    <li id="item"><a id="menu_lv1" href="blog.html">Blog</a></li>
+                    <li id="item"><a id="menu_lv1" href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+    <!-- login form  -->
+
+    <div class="login-form-container">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <h3>ĐĂNG NHẬP</h3>
+            <label>Tên tài khoản</label>
+            <input type="text" name="" class="box" placeholder="Nhập email hoặc số điện thoại" id="">
+            <label>Mật khẩu</label>
+            <input type="password" name="" class="box" placeholder="Nhập mật khẩu" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me"> Lưu thông tin</label>
+            </div>
+            <div>
+                <input type="submit" value="Đăng nhập" class="btn">
+            </div>
+
+            <p>Quên mật khẩu? <a href="#">Tại đây</a></p>
+            <p>Chưa có tài khoản? <a href="register.html">Tạo mới</a></p>
+        </form>
+
+    </div>
+    <div class="heading">
+        <h1>HNT BOOKSHOP</h1>
+        <p> <a href="homepage.html">Trang chủ >></a><a href="shop.html"> Sản phẩm</a>>> Văn học </p>
+    </div>
+
+
+
+    <section class="products">
+        <h1 class="title"> Sách <span>Văn học</span> </h1>
+        <div class="box-container" id="vanhoc"></div>
+    </section>
+
+    <!-- bottom navbar  -->
+
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+        <a href="#blogs" class="fas fa-blog"></a>
+    </nav>
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <p><img src="image/logo.png" width="70%" height="70%"></p>
+                <p style="line-height:2.5rem;">
+                    Số 669 Quốc lộ 1, Khu phố 3, Phường Linh Xuân, Thủ Đức, TP. Hồ Chí Minh.<br>
+                    HNTbookshop.com nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống HNTbookshop trên toàn quốc.
+                </p>
+                <img class="certificate" src="https://www.fahasa.com/media/wysiwyg/Logo-NCC/logo-bo-cong-thuong-da-thong-bao.png"></img>
+
+
+            </div>
+
+            <div class="box">
+                <h3>DỊCH VỤ</h3>
+                <a href="DieuKhoanSuDung.html"> <i class="fas fa-angle-right"></i> Điều khoản sử dụng </a>
+                <a href="ChinhSachBaoMat.html"> <i class="fas fa-angle-right"></i> Chính sách bảo mật </a>
+                <a href="about.html"> <i class="fas fa-angle-right"></i> Giới thiệu về HNT Bookshop </a>
+            </div>
+
+            <div class="box">
+                <h3>HỖ TRỢ</h3>
+                <a href="Chinhsachdoitra.html"> <i class="fas fa-angle-right"></i> Chính sách đổi - trả - hoàn tiền </a>
+                <a href="ChinhSachKhachSi.html"> <i class="fas fa-angle-right"></i> Chính sách khách sỉ </a>
+                <a href="PhuongThucVanChuyen.html"> <i class="fas fa-angle-right"></i> Phương thức vận chuyển </a>
+                <a href="PhuongThucVanChuyen.html"> <i class="fas fa-angle-right"></i> Phương thức thanh toán và xuất HĐ </a>
+            </div>
+
+            <div class="box">
+                <h3>LIÊN HỆ</h3>
+                <a href="#"> <i style="padding-right:.5rem" class="fas fa-angle-right"></i> (028) 37266 888 </a>
+                <a href="#"> <i style="padding-right:.5rem" class="fas fa-angle-right"></i> hntbookshop@gmail.com </a>
+                <a href="contact.html"><img src="image/worldmap.png" class="map" alt=""></a>
+            </div>
+
+        </div>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+
+    <script src="js/suggestions.js"></script>
+    <script src="js/homepageScript.js"></script>
+    <script>
+        function addShoppingCart() {
+            alert("Sản phẩm đã được thêm vào Giỏ hàng");
+        }
+        function registerEmail() {
+            alert("Cảm ơn bạn đã đăng ký!")
+        }
+    </script>
+    <script>
+        var url = "https://thuongnthstudent.github.io/htnbookshop-fr-project/database-htnbookshop/vanhoc.json";
+        fetch(url).then(data => data.json())
+            .then(products => {
+                products.forEach(sp => {
+                    document.querySelector('#vanhoc').innerHTML += `
+                                           <div class="box" >
+                                            <div class="icons">
+                                                <a  class="fas fa-shopping-cart" onclick="addtoCart(${sp.id},'${sp.name}',${sp.price},'${sp.image}')"></a>
+                                                <a href="ChiTietSanPham_vanhoc.html?id=${sp.id}" class="fas fa-eye"  onclick="chitiet(${sp.id},'${sp.name}',${sp.price},'${sp.image}')"></a>
+                                            </div>
+                                            <div class="image">
+                                                <img src="${sp.image}" />
+                                            </div>
+                                            <div class="content">
+                                                <h3>${sp.name}</h3>
+                                                <div class="price">$${sp.price}</div>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                           `
+                })
+            })
+    </script>
+    <script>
+        //thêm vào giỏ hàng
+        function addtoCart(id, ten, gia, hinh) {
+            alert("Sản phẩm đã được thêm vào Giỏ hàng");
+            var cart = JSON.parse(localStorage.getItem("cart"));
+            if (cart == null) {
+                cart = [];
+                cart.push({ id: id, name: ten, price: gia, image: hinh, quantity: 1 });
+            }
+            else {
+                let item = cart.find(item => item.id == id);
+                if (item) item.quantity++;
+                else cart.push({ id: id, name: ten, price: gia, image: hinh, quantity: 1 });
+            }
+            localStorage.setItem("cart", JSON.stringify(cart));
+        }
+    </script>
+</body>
+</html>

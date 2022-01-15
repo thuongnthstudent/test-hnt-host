@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Admin
+    </title>
+    <link rel="shortcut icon" href="image/Logo_vertical.png" type="image/png">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="image/logo.png" alt="Comapny logo">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class='bx bx-left-arrow-alt'></i>
+            </div>
+        </div>
+        <div class="sidebar-user">
+            <div class="sidebar-user-info">
+                <img src="image/Tien Hung.jpg" alt="User picture" class="profile-image">
+                <div class="sidebar-user-name">
+                    Hung Dang
+                </div>
+            </div>
+            <button class="btn btn-outline">
+                <i class='bx bx-log-out bx-flip-horizontal'></i>
+            </button>
+        </div>
+        <!-- SIDEBAR MENU -->
+        <ul class="sidebar-menu">
+            <li>
+                <a href="#" class="active">
+                    <i class='bx bx-home'></i>
+                    <span>Bảng điều khiển</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-shopping-bag'></i>
+                    <span>Đơn hàng</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chart'></i>
+                    <span>Báo cáo</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class='bx bx-user-circle'></i>
+                    <span>Tài khoản</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#">
+                            Chính sửa hồ sơ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Cài đặt tài khoản
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Hóa đơn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class='bx bx-category'></i>
+                    <span>Vận chuyển</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#">
+                            Vận chuyển
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Quản lý thu hộ
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class='bx bx-category'></i>
+                    <span>Sản phẩm</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#">
+                            Tất cả sản phẩm
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Nhóm sản phẩm
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Tồn kho
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-mail-send'></i>
+                    <span>mail</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span>Tin nhắn</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-calendar'></i>
+                    <span>Lịch</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class='bx bx-cog'></i>
+                    <span>Cài đặt</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                            Chế độ tối
+                            <span class="darkmode-switch"></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <div class="main-header">
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+            <div class="main-title">
+                Bảng điều khiển
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="row">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <!-- COUNTER -->
+                        <div class="counter">
+                            <div class="counter-title">
+                                Tổng đơn hàng
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    16.578
+                                </div>
+                                <i class='bx bx-shopping-bag'></i>
+                            </div>
+                        </div>
+                        <!-- END COUNTER -->
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <!-- COUNTER -->
+                        <div class="counter">
+                            <div class="counter-title">
+                                Tỷ lệ chuyển đổi
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    30.5%
+                                </div>
+                                <i class='bx bx-chat'></i>
+                            </div>
+                        </div>
+                        <!-- END COUNTER -->
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <!-- COUNTER -->
+                        <div class="counter">
+                            <div class="counter-title">
+                                Tổng lợi nhuận
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    935.780.000đ
+                                </div>
+                                <i class='bx bx-line-chart'></i>
+                            </div>
+                        </div>
+                        <!-- END COUNTER -->
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <!-- COUNTER -->
+                        <div class="counter">
+                            <div class="counter-title">
+                                Khách truy cập
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    25.821
+                                </div>
+                                <i class='bx bx-user'></i>
+                            </div>
+                        </div>
+                        <!-- END COUNTER -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <!-- TOP PRODUCT -->
+                    <div class="box f-height">
+                        <div class="box-header">
+                            Sản phẩm nổi bật
+                        </div>
+                        <div class="box-body">
+                            <ul class="product-list">
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="image/book4.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">Kỷ luật tự giác</div>
+                                            <div class="text-second">Kỹ năng sống</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Giá</div>
+                                        <div class="product-sales">89.000đ</div>
+                                    </div>
+                                </li>
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="image/vh4.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">Lặng yên cho nước chảy</div>
+                                            <div class="text-second">Văn học</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Giá</div>
+                                        <div class="product-sales">63.000đ</div>
+                                    </div>
+                                </li>
+
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="image/kt.b3.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">Tâm lý thị trường chứng khoán</div>
+                                            <div class="text-second">Kinh tế</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Giá</div>
+                                        <div class="product-sales">85.000đ</div>
+                                    </div>
+                                </li>
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="image/xh14.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">10 vạn câu hỏi vì sao?</div>
+                                            <div class="text-second">Xã hội</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Giá</div>
+                                        <div class="product-sales">69.000đ</div>
+                                    </div>
+                                </li>
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="image/kh3.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">Năng lượng</div>
+                                            <div class="text-second">Khoa học</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Giá</div>
+                                        <div class="product-sales">85.000đ</div>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- TOP PRODUCT -->
+                </div>
+                <div class="col-4 col-md-6 col-sm-12">
+                    <!-- CATEGORY CHART -->
+                    <div class="box f-height">
+                        <div class="box-body">
+                            <div id="category-chart"></div>
+                        </div>
+                    </div>
+                    <!-- END CATEGORY CHART -->
+                </div>
+                <div class="col-5 col-md-12 col-sm-12">
+                    <!-- CUSTOMERS CHART -->
+                    <div class="box f-height">
+                        <div class="box-header">
+                            Khách hàng
+                        </div>
+                        <div class="box-body">
+                            <div id="customer-chart"></div>
+                        </div>
+                    </div>
+                    <!-- END CUSTOMERS CHART -->
+                </div>
+                <div class="col-12">
+                    <!-- ORDERS TABLE -->
+                    <div class="box">
+                        <div class="box-header">
+                            Đơn hàng gần đây
+                        </div>
+                        <div class="box-body overflow-scroll">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Khách hàng</th>
+                                        <th>Ngày đặt</th>
+                                        <th>Trạng thái đơn hàng</th>
+                                        <th>Tình trạng thanh toán</th>
+                                        <th>Tổng tiền</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#0710</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="image/Tien Hung.jpg" alt="user image">
+                                                <span>Hung Dang</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-10-07</td>
+                                        <td>
+                                            <span class="order-status order-ready">
+                                                Sẵn sàng
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-pending">
+                                                <div class="dot"></div>
+                                                <span>Chưa thanh toán</span>
+                                            </div>
+                                        </td>
+                                        <td>2.250.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2407</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="image/Nga Le.jpg" alt="user image">
+                                                <span>Nga Le</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-24-07</td>
+                                        <td>
+                                            <span class="order-status order-shipped">
+                                                Đã giao
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Đã thanh toán</span>
+                                            </div>
+                                        </td>
+                                        <td>1.500.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#0311</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="image/Bich Tam.jpg" alt="user image">
+                                                <span>Tam Huynh</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-03-11</td>
+                                        <td>
+                                            <span class="order-status order-shipped">
+                                                Đã giao
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Đã thanh toán</span>
+                                            </div>
+                                        </td>
+                                        <td>3.750.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2806</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="image/Hoai Thuong.jpg" alt="user image">
+                                                <span>Thuong Nguyen</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-28-06</td>
+                                        <td>
+                                            <span class="order-status order-shipped">
+                                                Đã giao
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Đã thanh toán</span>
+                                            </div>
+                                        </td>
+                                        <td>2.000.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2701</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="image/truong.jpg" alt="user image">
+                                                <span>Truong Tran</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-27-01</td>
+                                        <td>
+                                            <span class="order-status order-shipped">
+                                                Đã giao
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Đã thanh toán</span>
+                                            </div>
+                                        </td>
+                                        <td>2.750.000đ</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- END ORDERS TABLE -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <div class="overlay"></div>
+
+    <!-- SCRIPT -->
+    <!-- APEX CHART -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- APP JS -->
+    <script src="js/script_admin.js"></script>
+
+</body>
+
+</html>
